@@ -1,32 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusty</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dusty</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hidden { display: none; }
+    .lang-icon { vertical-align: middle; }
+    .arrow { cursor: pointer; user-select: none; }
+  </style>
+</head>
+<body>
 
-  <!-- the overlay and horizontal pattern -->
 <div class="outside">
-    <img class="icon" src="assets/dusty.png">
-    <h1 style="display: inline-block; margin-left: 10px; font-size: 50px;">Dusty</h1>
+  <img class="icon" src="assets/dusty.png">
+  <h1 style="display: inline-block; margin-left: 10px; font-size: 50px;">Dusty</h1>
 
-
-    <div class="inside"><h1 class="main-text-margin" style="margin-bottom: 2px;">About Me</h1>
+  <div class="inside">
+    <h1 class="main-text-margin" style="margin-bottom: 2px;">About Me</h1>
     <ul>
       <li>Programmer for 3 years</li>
     </ul>
 
-    <h1 class="main-text-margin" style="margin-bottom: 2px;">Languages</h1>
-    <li><img src="assets/icons/haxe.png" class="lang-icon" width="16" height="16"> 3 Years On Haxe</li>
-      <li><img src="assets/icons/lua.png" class="lang-icon" width="16" height="16"> 6 Months On Lua</li>
-      <li><img src="assets/icons/javascript.png" class="lang-icon" width="16" height="16"> 1-2 Months On JavaScript</li>
+    <div class="inside">
+      <h1 class="main-text-margin" style="margin-bottom: 2px;">Languages</h1>
+      <ul>
+        <li>
+          <img src="assets/icons/haxe.png" class="lang-icon" width="16" height="16"> 3 Years On Haxe
+          <span class="arrow" onclick="toggleVisibility('haxeLinks')">▼</span>
+          <div id="haxeLinks" class="hidden">
+            <!-- Embed your video and links here -->
+            <p><a href="#">Link 1</a></p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe></p>
+          </div>
+        </li>
+        <li><img src="assets/icons/lua.png" class="lang-icon" width="16" height="16"> 6 Months On Lua</li>
+        <li><img src="assets/icons/javascript.png" class="lang-icon" width="16" height="16"> 1-2 Months On JavaScript</li>
+      </ul>
     </div>
+  </div>
+</div>
 
-  
-</div>   
-  </body>
+<script src="script.js"></script>
+
+</body>
 </html>
