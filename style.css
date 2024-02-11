@@ -80,10 +80,10 @@ a:hover {
 .gradient {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #2c2f33, #23272a);
+  background: linear-gradient(135deg, #2c2f33, #282d30);
   background-size: 400% 400%;
   animation: gradient-animation 10s ease infinite;
-  filter: blur(10px); /* Add blur effect */
+  filter: blur(10px);
 }
 
 @keyframes gradient-animation {
