@@ -6,15 +6,12 @@
   <title>Dusty</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .lang-box { display: inline-block; }
+    .hidden { display: none; }
     .lang-icon { vertical-align: middle; }
     .arrow { cursor: pointer; user-select: none; }
-    .language-details { display: none; position: absolute; background-color: #f9f9f9; padding: 10px; }
   </style>
 </head>
 <body>
-
-  <div class="gradient"></div>
 
 <div class="outside">
   <img class="icon" src="assets/dusty.png">
@@ -29,13 +26,13 @@
     <div class="inside">
       <h1 class="main-text-margin" style="margin-bottom: 2px;">Languages</h1>
       <ul>
-        <li class="lang-box">
+        <li>
           <img src="assets/icons/haxe.png" class="lang-icon" width="16" height="16"> 3 Years On Haxe
           <span class="arrow" onclick="toggleVisibility('haxeLinks')">▼</span>
-          <div id="haxeLinks" class="language-details">
+          <div id="haxeLinks" class="hidden">
             <!-- Embed your video and links here -->
-            <p><a href="#">FNF Corruption: Inevitable Fate</a></p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/-vJ91B5IdrI" frameborder="0" allowfullscreen></iframe></p>
+            <p><a href="#">Link 1</a></p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe></p>
           </div>
         </li>
         <li><img src="assets/icons/lua.png" class="lang-icon" width="16" height="16"> 6 Months On Lua</li>
